@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Só mais um site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h2>Cadastro de Produto</h2>
+
+        <form>
+            <label for="nome">Nome do Produto:</label>
+            <input type="text" id="nome" required>
+
+            <label for="preco">Preço (R$):</label>
+            <input type="number" id="preco" min="0" step="0.01" required>
+
+            <label for="categoria">Categoria:</label>
+            <select id="categoria">
+                <option value="eletronicos">Eletrônicos</option>
+                <option value="perifericos">Periféricos</option>
+            </select>
+
+            <button type="submit">Salvar Produto</button>
+        </form>
+
+        <h3>Lista de Produtos</h3>
+
+        <input type="search" id="busca" placeholder="Buscar produto...">
+
+        <div class="filtros">
+            <button type="button" class="filtro" data-categoria="todos">Todos</button>
+            <button type="button" class="filtro" data-categoria="eletronicos">Eletrônicos</button>
+            <button type="button" class="filtro" data-categoria="perifericos">Periféricos</button>
+        </div>
+
+        <section id="lista-produtos"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
