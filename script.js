@@ -2,7 +2,8 @@ const produtos = [
     { id: 1, nome: "Pc Samsung AC14", preco: 1500, categoria: "eletronicos" },
     { id: 2, nome: "Monitor Assus 320hz", preco: 500, categoria: "perifericos" },
     { id: 3, nome: "Tablet RedMagic Astra 7", preco: 2000, categoria: "eletronicos" },
-    { id: 4, nome: "Abajur gamer bochoco", preco: 5000, categoria: "perifericos" }
+    { id: 4, nome: "Abajur gamer bochoco", preco: 5000, categoria: "perifericos" },
+    { id: 6, nome: "Webcam Full HD", preco: 350.00, categoria: "eletronicos" }
 ];
 
 const formulario = document.querySelector('form');
